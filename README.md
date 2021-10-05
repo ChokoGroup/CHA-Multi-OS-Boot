@@ -5,19 +5,18 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 This preinstalled system images don't include any roms beside those in the offical CHA OS.
 
-
-
+##
 ### Quick instructions
 1. Read below the available sets, choose one and download the correspondent \*.7z file.
 2. Extract the files and read the \*.txt file for important information.
-3. a) If using SD card, write the extracted \*.img file to the SD card using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
-   b) If not using SD card, put the CHA in FEL mode ( https://cha-choko-mod.fandom.com/wiki/How_to_put_the_CHA_in_FEL_mode ) and then write the extracted \*.img file to the CHA using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
-4. Safelly eject the CHA or SD card from PC and enjoy!
+3. If using SD card, write the extracted \*.img file to the SD card using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
+4. If not using SD card, put the CHA in FEL mode ( https://cha-choko-mod.fandom.com/wiki/How_to_put_the_CHA_in_FEL_mode ) and then write the extracted \*.img file to the CHA using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
+5. Safelly eject the CHA or SD card from PC and enjoy!
 
-
-
+##
 ### Main features
 All the \*.img can be written either to the internal memory (eMMC) or a SD card (if your CHA has the reader - https://cha-choko-mod.fandom.com/wiki/SD_Card_reader_MOD), but don't use two images with multi systems (because they use the same partition names and can cause trouble).
+###
 It's safe to have only CHA OS in eMMC and CHA OS + Batocera in SD card, or CHA OS + Lakka in eMMC and Batocera in SD card, but not CHA OS + Lakka in eMMC and CHA OS + Batocera in SD card.
 
 All the "multi boot" \*.img support loading assets and roms from a fat32 partition labeled "CHOKO_DISK".
@@ -28,8 +27,10 @@ All the "multi boot" \*.img include the FB Alpha 2012 core (in Lakka or Batocera
 Each \*.img file in this repository has a similar named \*.txt with more details - please read it.
 
 
-
+##
 # Select your flavor (read all before choosing)
+
+
 
 ### CHA OS (with Choko Hack) on eMMC or SD card
 You'll have (some) more space available to store games for use with Choko Menu (because it uses all eMMC space), but in SD card it won't automatically expand to use all available space (use some tool line gparted).
@@ -38,7 +39,7 @@ Get the latest release from https://github.com/ChokoGroup/Choko-Hack/releases/la
 Read more about the hack and released system images in the repository main page at https://github.com/ChokoGroup/Choko-Hack
 
 
-
+##
 ### Lakka on eMMC or SD card (official build)
 You'll boot right into Lakka UI (RetroArch) and can load games from eMMC, SD card or USB.
 On first boot, Lakka will expand the ext4 partition to use all available space (either eMMC or SD card).
@@ -46,14 +47,14 @@ The official releases can be downloaded from http://www.lakka.tv/get/linux/cha/ 
 For now we should keep using the "Orange Pi Plus 2E build" ( https://www.lakka.tv/get/linux/allwinner/ ) that works perfectly.
 
 
-
+##
 ### Batocera on eMMC or SD card (official build)
 You'll boot right into Batocera UI (EmulationStation) and can load games from eMMC, SD card or USB.
 On first boot, Batocera will expand the ext4 partition to use all available space (either eMMC or SD card).
 The official releases can be downloaded from https://batocera.org/download
 
 
-
+##
 ### CHA OS (with Choko Hack) and Lakka
 a) On eMMC:
   CHA_DISK is expanded to use eMMC empty space and store games (for Choko Menu) with a small LAKKA_DISK partition. Intended to load games from USB, with or without CHOKO_DISK partition.
@@ -62,7 +63,7 @@ b) On SD card:
   CHA_DISK will have the same extra space but LAKKA_DISK partition will expand to use all SD card available. Intended to use large sets of roms with playlists, thumbnails and bezels (in Lakka).
 
 
-
+##
 ### CHA OS (with Choko Hack) and Batocera
 a) On eMMC:
   CHA_DISK is expanded to use eMMC empty space and store games (for Choko Menu) with a small BATOCERA_DISK partition. Batocera can be configured to use any USB disk (with or without CHOKO_DISK partition).
@@ -72,7 +73,7 @@ b) On SD card:
   CHA_DISK will have the same extra space but BATOCERA_DISK partition will expand to use all SD card available. Intended to use large sets of roms with Batocera and all it's features.
 
 
-
+##
 ### CHA OS (with Choko Hack) and Lakka and Batocera
 a) On eMMC:
   All eMMC space is used, but still CHA_DISK has very little free space to store games (for Choko Menu). The LAKKA_DISK and BATOCERA_DISK partitions are minimal.
@@ -84,12 +85,11 @@ b) On SD card:
   You can also just move and resize LAKKA_DISK and BATOCERA_DISK using some partition tools, like gparted.
 
 
+#
+### All this "multi boot" \*.img can be downloaded from https://github.com/ChokoGroup/CHA-Multi-OS-Boot/releases/latest
 
-All this "multi boot" \*.img can be downloaded from https://github.com/ChokoGroup/CHA-Multi-OS-Boot/releases/latest
-
-
-
-### Instructions to manually build your own \*.img
+#
+# Instructions to manually build your own \*.img
 If you wan't to make your system image or just want to know how this was done, here are some guidelines.
 You'll need some partition tool like gparted.
 
