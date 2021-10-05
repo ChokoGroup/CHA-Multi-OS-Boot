@@ -90,7 +90,7 @@ b) On SD card:
 
 #
 # Instructions to manually build your own \*.img
-If you wan't to make your system image or just want to know how this was done, here are some guidelines.
+If you want to make your system image or just want to know how this was done, here are some guidelines.
 You'll need some partition tool like gparted.
 
 1. You need CHA OS and Choko Hack already installed, either in eMMC or SD card. Connect the CHA in FEL mode to PC or put the SD card in a PC.
