@@ -1,5 +1,5 @@
 # CHA Multi OS Boot
-We want that everybody can get the most out of the CHA, so we provide ways to boot Lakka and/or Batocera without losing the official OS.
+We want that everybody get the most out of the CHA, so here are more options for the CHA: ways to boot Lakka and/or Batocera without losing the official OS.
 
 We provide preinstalled system images so you don't have to do all the process manually, but we release all the scripts and assets for those that want to modify or just want to know how it works.
 
