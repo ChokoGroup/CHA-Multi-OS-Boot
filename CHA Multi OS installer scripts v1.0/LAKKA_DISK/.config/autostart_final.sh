@@ -34,7 +34,7 @@ then
     cp -r /tmp/overlays /tmp/CHOKO_DISK/
   fi
   systemctl stop tmp-overlays.mount
-  mount --bind /tmp/CHOKO_DISK/overlays /tmp/overlays
+  mount --bind /tmp/CHOKO_DISK/overlays /storage/overlays
   mkdir -p /tmp/CHOKO_DISK/remappings
   mount --bind /tmp/CHOKO_DISK/remappings /storage/remappings
   mkdir -p  /tmp/CHOKO_DISK/.config/retroarch/config
