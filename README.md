@@ -19,6 +19,7 @@ This preinstalled system images don't include any roms beside those in the offic
 2. Extract the folder "CHA Multi OS updater" to the root of a USB pendisk
 3. Download the latest Lakka and/or Batocera \*.img
 4. Using 7zip, right click in the downloaded \*.img and:
+
 a) For Lakka, extract the files "sun8i-h3-orangepi-plus2e.dtb", "KERNEL" and "SYSTEM" to the folder CHA_BOOT that is inside "CHA Multi OS updater"
 
 b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside "CHA Multi OS updater"
