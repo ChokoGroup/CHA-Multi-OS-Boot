@@ -1,8 +1,8 @@
 #!/bin/sh
 
-#wifi seems to not start automatically so I added this
-connmanctl enable wifi
-connmanctl scan wifi
+# if wifi not starting automatically try this
+# connmanctl enable wifi
+# connmanctl scan wifi
 
 if [ -e /dev/disk/by-label/CHOKO_DISK ]
 then
@@ -35,10 +35,12 @@ then
   fi
   systemctl stop tmp-overlays.mount
   mount --bind /tmp/CHOKO_DISK/overlays /storage/overlays
-  mkdir -p /tmp/CHOKO_DISK/remappings
-  mount --bind /tmp/CHOKO_DISK/remappings /storage/remappings
   mkdir -p  /tmp/CHOKO_DISK/.config/retroarch/config
   mount --bind /tmp/CHOKO_DISK/.config/retroarch/config /storage/.config/retroarch/config
+  mkdir -p /tmp/CHOKO_DISK/remappings
+  mount --bind /tmp/CHOKO_DISK/remappings /storage/remappings
+  mkdir -p /tmp/CHOKO_DISK/bios
+  mount --bind /tmp/CHOKO_DISK/bios /storage/system
   if [ ! -d /tmp/CHOKO_DISK/cores ]
   then
     cp -r /storage/cores /tmp/CHOKO_DISK/
@@ -56,3 +58,4 @@ then
     done
   fi
 fi
+
