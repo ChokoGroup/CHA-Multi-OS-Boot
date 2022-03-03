@@ -15,7 +15,7 @@ This preinstalled system images don't include any roms beside those in the offic
 
 ## 
 ### Quick instructions to update Lakka or Batocera from Choko Menu
-1. Download "CHA.Multi.OS.updater.7z" from https://github.com/ChokoGroup/Choko-Hack/releases/latest
+1. Download "CHA.Multi.OS.updater.7z" from https://github.com/ChokoGroup/CHA-Multi-OS-Boot/releases/latest
 2. Extract the folder "CHA Multi OS updater" to the root of a USB pendisk
 3. Download the latest Lakka and/or Batocera \*.img
 4. Using 7zip, right click in the downloaded \*.img and:
