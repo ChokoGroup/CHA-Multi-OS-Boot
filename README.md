@@ -10,7 +10,7 @@ This preinstalled system images don't include any roms beside those in the offic
 1. Read below the available sets, choose one and download the correspondent \*.7z file.
 2. Extract the files and read the \*.txt file for important information.
 3. If using SD card, write the extracted \*.img file to the SD card using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
-4. If not using SD card, put the CHA in FEL mode ( https://cha-choko-mod.fandom.com/wiki/How_to_put_the_CHA_in_FEL_mode ) and then write the extracted \*.img file to the CHA using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
+4. If not using SD card, put the CHA in FEL mode ( https://github.com/lilo-san/cha-documentation#enabling-fel-mode ) and then write the extracted \*.img file to the CHA using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
 5. Safelly eject the CHA or SD card from PC and enjoy!
 
 ## 
@@ -30,7 +30,7 @@ b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside
 ## 
 ### Main features
 
-All the \*.img can be written either to the internal memory (eMMC) or a SD card (if your CHA has the reader - https://cha-choko-mod.fandom.com/wiki/SD_Card_reader_MOD), but don't use two images with multi systems (because they use the same partition names and can cause trouble).
+All the \*.img can be written either to the internal memory (eMMC) or a SD card (if your CHA has the reader - https://github.com/lilo-san/cha-documentation#hardware-modifications ), but don't use two images with multi systems (because they use the same partition names and can cause trouble).
 ### 
 It's safe to have only CHA OS in eMMC and CHA OS + Batocera in SD card, or CHA OS + Lakka in eMMC and Batocera in SD card, but not CHA OS + Lakka in eMMC and CHA OS + Batocera in SD card.
 
