@@ -33,7 +33,7 @@ CAREFULL! The updater scripts won't check if there is enought space in first par
 
 WARNING! The CHA + Batocera img can't be updated to Batocera 34 without first resizing the first partition (with a tool like gparted).
 Also, updating to 34 will require to delete `es_systems_fbalpha2012.cfg` and `es_systems_mame2010.cfg` from the folder `system/configs/emulationstation`.
-The can be done by the updater scripts or manually, browsing to `\\\\BATOCERA\\share` in your home network.
+The can be done by the updater scripts or manually, browsing to `\\BATOCERA\share` in your home network.
 
 
 ## 
