@@ -5,6 +5,7 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 This preinstalled system images don't include any roms beside those in the offical CHA OS.
 
+
 ## 
 ### Quick instructions to write a new \*.img file
 1. Read below the available sets, choose one and download the correspondent \*.7z file.
@@ -12,6 +13,7 @@ This preinstalled system images don't include any roms beside those in the offic
 3. If using SD card, write the extracted \*.img file to the SD card using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
 4. If not using SD card, put the CHA in FEL mode ( https://github.com/lilo-san/cha-documentation#enabling-fel-mode ) and then write the extracted \*.img file to the CHA using a program like balenaEtcher, Win32 Disk Imager or HDD Raw Copy Tool.
 5. Safelly eject the CHA or SD card from PC and enjoy!
+
 
 ## 
 ### Quick instructions to update Lakka or Batocera from Choko Menu
@@ -26,6 +28,13 @@ b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside
 
 5. Eject the pendisk safely and put it in the USB EXT port of the CHA.
 6. Boot the CHA and select "Update Batocera and/or Lakka" in Choko Menu.
+
+CAREFULL! The updater scripts won't check if there is enought space in first partition.
+
+WARNING! The CHA + Batocera img can't be updated to Batocera 34 without first resizing the first partition (with a tool like gparted).
+Also, updating to 34 will require to delete `es_systems_fbalpha2012.cfg` and `es_systems_mame2010.cfg` from the folder `system/configs/emulationstation`.
+The can be done by the updater scripts or manually, browsing to `\\\\BATOCERA\\share` in your home network.
+
 
 ## 
 ### Main features
@@ -102,6 +111,7 @@ b) On SD card:
 
 # 
 ### All this "multi boot" \*.img can be downloaded from https://github.com/ChokoGroup/CHA-Multi-OS-Boot/releases/latest
+
 
 # 
 # Instructions to manually build your own \*.img
