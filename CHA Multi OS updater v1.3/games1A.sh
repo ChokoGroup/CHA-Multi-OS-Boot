@@ -12,6 +12,10 @@ then
   if [ $WASOK -eq 0 ]
   then
     echo -e "\e[1;32m\"CHA_BOOT\" was updated.\e[m"
+    mkdir -p /tmp/LAKKA_DISK
+    mount /dev/disk/by-label/LAKKA_DISK /tmp/LAKKA_DISK
+    [ -f /tmp/LAKKA_DISK/.config/bootBatocera720p.sh ] || cp -v "$RUNNINGFROM/LAKKA_DISK/.config/bootBatocera720p.sh" /tmp/LAKKA_DISK/.config/
+    [ -f /tmp/LAKKA_DISK/.config/bootBatocera1080p.sh ] || cp -v "$RUNNINGFROM/LAKKA_DISK/.config/bootBatocera1080p.sh" /tmp/LAKKA_DISK/.config/
     mkdir -p /tmp/BATOCERA_DISK
     mount /dev/disk/by-label/BATOCERA_DISK /tmp/BATOCERA_DISK
     [ -f /tmp/BATOCERA_DISK/system/configs/emulationstation/es_systems_fbalpha2012.cfg ] || rm -v /tmp/BATOCERA_DISK/system/configs/emulationstation/es_systems_fbalpha2012.cfg
