@@ -1,0 +1,28 @@
+{
+  "version": "1.4",
+  "default_core_path": "",
+  "default_core_name": "",
+  "base_content_directory": "/storage/roms",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "sort_mode": 0,
+  "items": [
+    {
+      "path": "/storage/.config/bootCHA.sh",
+      "label": "Reboot into Choko Menu",
+      "core_path": "/tmp/cores/bash_launcher_libretro.so",
+      "core_name": "Linux (Bash Launcher)",
+      "crc32": "DETECT",
+      "db_name": "_Reboot the CHA_.lpl"
+    },
+    {
+      "path": "/storage/.config/bootBatocera720p.sh",
+      "label": "Reboot into Batocera at 720p",
+      "core_path": "/tmp/cores/bash_launcher_libretro.so",
+      "core_name": "Linux (Bash Launcher)",
+      "crc32": "DETECT",
+      "db_name": "_Reboot the CHA_.lpl"
+    }
+  ]
+}

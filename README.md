@@ -5,6 +5,8 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 This preinstalled system images don't include any roms beside those in the offical CHA OS.
 
+Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 1080p resolution, because Lakka needs 1 GB RAM mod to run.
+
 
 ## 
 ### Quick instructions to write a new \*.img file
@@ -31,7 +33,7 @@ b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside
 
 CAREFULL! The updater scripts won't check if there is enought space in first partition.
 
-WARNING! The CHA + Batocera img can't be updated to Batocera 34 without first resizing the first partition (with a tool like gparted).
+WARNING! You probably can't be update to Lakka 4.3 (or later) / Batocera 34 (or later) without first resizing the first partition (with a tool like gparted).
 Also, updating to 34 will require to delete `es_systems_fbalpha2012.cfg` and `es_systems_mame2010.cfg` from the folder `system/configs/emulationstation`.
 That can be done by the updater scripts or manually, browsing to `\\BATOCERA\share` in your home network.
 
@@ -138,7 +140,7 @@ NOTE: If you are using SD card and want Lakka and Batocera AND use another parti
 
 9. Eject the CHA or SD card from PC (and put the SD card in the CHA.
 
-10. Copy the folder "CHA Multi OS installer scripts v1.0" to the root of a pendisk and insert the pendisk in the USB EXT port.
+10. Copy the folder "CHA Multi OS installer scripts" to the root of a pendisk and insert the pendisk in the USB EXT port.
 
 11. Boot the CHA into Choko Menu and select the options that fit your case to finish installation of Lakka and/or Batocera. You have to run the script once per option.
 
