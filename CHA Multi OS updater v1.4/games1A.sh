@@ -11,6 +11,7 @@ then
   cp -vr "$RUNNINGFROM/CHA_BOOT" /tmp/; WASOK=$?
   if [ $WASOK -eq 0 ]
   then
+    rm "/tmp/CHA_BOOT/To update"*
     echo -e "\e[1;32m\"CHA_BOOT\" was updated.\e[m"
     mkdir -p /tmp/CHA_DISK
     mount /dev/disk/by-label/CHA_DISK /tmp/CHA_DISK
@@ -20,6 +21,9 @@ then
     then
       mkdir -p /tmp/LAKKA_DISK
       mount /dev/disk/by-label/LAKKA_DISK /tmp/LAKKA_DISK
+      cp -v "$RUNNINGFROM/LAKKA_DISK/.config/autostart.sh" /tmp/LAKKA_DISK/.config/
+      chmod 755 /tmp/LAKKA_DISK/.config/autostart.sh
+      cp -v "$RUNNINGFROM/LAKKA_DISK/.config/swap.conf.choko" /tmp/LAKKA_DISK/.config/
       [ -f /tmp/LAKKA_DISK/.config/bootBatocera720p.sh ] || cp -v "$RUNNINGFROM/LAKKA_DISK/.config/bootBatocera720p.sh" /tmp/LAKKA_DISK/.config/
       [ -f /tmp/LAKKA_DISK/.config/bootBatocera1080p.sh ] || rm -v /tmp/LAKKA_DISK/.config/bootBatocera1080p*
     fi
@@ -33,6 +37,8 @@ then
       fi
       mkdir -p /tmp/BATOCERA_DISK
       mount /dev/disk/by-label/BATOCERA_DISK /tmp/BATOCERA_DISK
+      cp -r "$RUNNINGFROM/BATOCERA_DISK" /tmp/
+      chmod 755 /tmp/BATOCERA_DISK/system/custom.sh
       [ -f /tmp/BATOCERA_DISK/system/configs/emulationstation/es_systems_fbalpha2012.cfg ] || rm -v /tmp/BATOCERA_DISK/system/configs/emulationstation/es_systems_fbalpha2012.cfg
       [ -f /tmp/BATOCERA_DISK/system/configs/emulationstation/es_systems_mame2010.cfg ] || rm -v /tmp/BATOCERA_DISK/system/configs/emulationstation/es_systems_mame2010.cfg
     fi

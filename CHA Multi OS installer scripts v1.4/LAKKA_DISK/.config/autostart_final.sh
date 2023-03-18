@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# if wifi not starting automatically try this
+# if wifi not starting automatically try this:
 # connmanctl enable wifi
 # connmanctl scan wifi
 
@@ -57,5 +57,11 @@ then
       chmod 755 "/storage/cores/$f"
     done
   fi
+  mkdir -p /tmp/CHOKO_DISK/.update
+  mount --bind /tmp/CHOKO_DISK/.update /storage/.update
+
+  cp /storage/.config/swap.conf.choko /storage/.config/swap.conf
+  systemctl restart swap.service
+  rm /storage/.config/swap.conf
 fi
 

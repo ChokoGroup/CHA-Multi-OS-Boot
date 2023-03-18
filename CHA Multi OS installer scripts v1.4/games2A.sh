@@ -21,6 +21,10 @@ then
   cp "$RUNNINGFROM/Run Batocera 720p."* /.choko/
   chmod 644 /.choko/*
   chmod 755 /.choko/*.sh
+  mkdir -p /tmp/BATOCERA_DISK
+  mount /dev/disk/by-label/BATOCERA_DISK /tmp/BATOCERA_DISK
+  cp -r "$RUNNINGFROM/BATOCERA_DISK" /tmp/
+  chmod 755 /tmp/BATOCERA_DISK/system/custom.sh
   umount /tmp/BATOCERA_DISK 2>/dev/null
   echo -e "Batocera installed.\nThe first time booting into Batocera it will try to expand\nthe BATOCERA_DISK partition and create missing folders/files."
 else
