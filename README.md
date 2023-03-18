@@ -5,7 +5,8 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 This preinstalled system images don't include any roms beside those in the offical CHA OS.
 
-Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 1080p resolution, because Lakka needs 1 GB RAM mod to run.
+Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 1080p resolution, because of memory restrictions.
+We are still using the orangepi-plus2e builds instead of the capcom-home-arcade, because of TV flickering and slugish UI.
 
 
 ## 
@@ -24,7 +25,7 @@ Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 108
 3. Download the latest Lakka and/or Batocera \*.img
 4. Using 7zip, right click in the downloaded \*.img and:
 
-a) For Lakka, extract the files "sun8i-h3-orangepi-plus2e.dtb", "KERNEL" and "SYSTEM" to the folder CHA_BOOT that is inside "CHA Multi OS updater"
+a) For Lakka, extract the files "sun8i-h3-libretech-all-h3-cc.dtb", "KERNEL" and "SYSTEM" to the folder CHA_BOOT that is inside "CHA Multi OS updater"
 
 b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside "CHA Multi OS updater"
 
@@ -134,7 +135,7 @@ NOTE: If you are using SD card and want Lakka and Batocera AND use another parti
 
 6. If you are using SD card and want another partition labeled CHOKO_DISK to store common roms and assets (to use with Batocera and Lakka), create a fat32 partition labeled CHOKO_DISK. Remember this partition is not really needed.
 
-7. If you want Lakka, copy the files "sun8i-h3-orangepi-plus2e.dtb", "KERNEL" and "SYSTEM" to the root of CHA_BOOT partition. You extract those files from the official Lakka \*.img with 7-zip tool.
+7. If you want Lakka, copy the files "sun8i-h3-libretech-all-h3-cc.dtb", "KERNEL" and "SYSTEM" to the root of CHA_BOOT partition. You extract those files from the official Lakka \*.img with 7-zip tool.
 
 8. If you want Batocera, copy the file "batocera-boot.conf" and the folder "boot" to the root of CHA_BOOT partition. You extract them from the official Batocera \*.img with 7-zip tool.
 
