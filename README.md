@@ -6,6 +6,8 @@ We provide preinstalled system images so you don't have to do all the process ma
 The preinstalled system images don't include any roms beside those in the offical CHA OS.
 
 Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 1080p resolution, because of memory restrictions.
+To help with low memory, a swapfile will be used if CHOKO_DISK is available (both in Lakka and Batocera).
+Also in CHOKO_DISK, update folder is used to allow aumomatic download and upgrade of Lakka and Batocera.
 We are still using the orangepi-plus2e builds for Lakka instead of the capcom-home-arcade, because of slugish UI.
 
 
