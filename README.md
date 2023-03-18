@@ -6,7 +6,7 @@ We provide preinstalled system images so you don't have to do all the process ma
 This preinstalled system images don't include any roms beside those in the offical CHA OS.
 
 Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 1080p resolution, because of memory restrictions.
-We are still using the orangepi-plus2e builds instead of the capcom-home-arcade, because of TV flickering and slugish UI.
+We are still using the orangepi-plus2e builds for Lakka instead of the capcom-home-arcade, because of slugish UI.
 
 
 ## 
