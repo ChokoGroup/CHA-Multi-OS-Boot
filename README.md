@@ -5,9 +5,17 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 The preinstalled system images don't include any roms beside those in the offical CHA OS.
 
-Version 1.4 of this scripts will no longer support loading Lakka/Batocera in 1080p resolution, because of memory restrictions.
-To help with low memory, a swapfile will be used if CHOKO_DISK is available (both in Lakka and Batocera).
-Also in CHOKO_DISK, update folder is used to allow aumomatic download and upgrade of Lakka and Batocera.
+Version 1.5:
+- Updated launch scripts for fbalpha2012 and mame2010 roms to work with python 3.11 (Batocera 37).
+- Splash videos are enabled again and play correctly (without changing screen resolution) in 4K TVs.
+
+
+Version 1.4:
+- Remove support for loading Lakka/Batocera in 1080p resolution, to minimize issues due to memory restrictions.
+- To help with low memory, a swapfile will be used if CHOKO_DISK is available (both in Lakka and Batocera).
+- Also in CHOKO_DISK, update folder is used to allow aumomatic download and upgrade of Lakka and Batocera.
+
+
 We are still using the orangepi-plus2e builds for Lakka instead of the capcom-home-arcade, because of slugish UI.
 
 
@@ -37,8 +45,8 @@ b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside
 CAREFULL! The updater scripts won't check if there is enought space in first partition.
 
 WARNING! You probably can't be update to Lakka 4.3 (or later) / Batocera 34 (or later) without first resizing the first partition (with a tool like gparted).
-Also, updating to 34 will require to delete `es_systems_fbalpha2012.cfg` and `es_systems_mame2010.cfg` from the folder `system/configs/emulationstation`.
-That can be done by the updater scripts or manually, browsing to `\\BATOCERA\share` in your home network.
+Also, updating Batocera to 34+ (or again to 37+) will require to delete `es_systems_fbalpha2012.cfg` and `es_systems_mame2010.cfg` from the folder `system/configs/emulationstation`.
+That can be done by the updater scripts or manually, browsing to `\\BATOCERA\share\system\configs\emulationstation` in your home network.
 
 
 ## 
