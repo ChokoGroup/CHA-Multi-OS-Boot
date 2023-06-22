@@ -7,12 +7,13 @@ The preinstalled system images don't include any roms beside those in the offica
 
 Version 1.5:
 - Updated launch scripts for fbalpha2012 and mame2010 roms to work with python 3.11 (Batocera 37).
-- Splash videos are enabled again and play correctly (without changing screen resolution) in 4K TVs.
+- Splash videos are enabled again and play correctly (without changing screen resolution) in 4K TVs. There are some in Extras folder. Avoid 1080p videos, 720p play nice.
+- If CHOKO_DISK partition is available, it will also be used to save/load splash videos/images.
 
 
 Version 1.4:
 - Remove support for loading Lakka/Batocera in 1080p resolution, to minimize issues due to memory restrictions.
-- To help with low memory, a swapfile will be used if CHOKO_DISK is available (both in Lakka and Batocera).
+- To help with low memory, a swapfile will be used if CHOKO_DISK partition is available (both in Lakka and Batocera).
 - Also in CHOKO_DISK, update folder is used to allow aumomatic download and upgrade of Lakka and Batocera.
 
 

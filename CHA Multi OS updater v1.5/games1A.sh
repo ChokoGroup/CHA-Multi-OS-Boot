@@ -3,6 +3,7 @@
 
 RUNNINGFROM="$(dirname "$(realpath "$0")")"
 
+rm "$RUNNINGFROM/CHA_BOOT/To update "*
 if [ -d "$RUNNINGFROM/CHA_BOOT" ] && [ "$(ls -A "$RUNNINGFROM/CHA_BOOT/")" ]
 then
   mkdir -p /tmp/CHA_BOOT
@@ -19,6 +20,7 @@ then
     rm "/tmp/CHA_DISK/.choko/Run Batocera 1080p"*
     if [ -e /dev/disk/by-label/LAKKA_DISK ]
     then
+	  cp -vr "$RUNNINGFROM/extlinux.lakka.720p.conf" /tmp/CHA_BOOT/extlinux/
       mkdir -p /tmp/LAKKA_DISK
       mount /dev/disk/by-label/LAKKA_DISK /tmp/LAKKA_DISK
       cp -v "$RUNNINGFROM/LAKKA_DISK/.config/autostart.sh" /tmp/LAKKA_DISK/.config/
@@ -29,6 +31,7 @@ then
     fi
     if [ -e /dev/disk/by-label/BATOCERA_DISK ]
     then
+	  cp -vr "$RUNNINGFROM/extlinux.batocera.720p.conf" /tmp/CHA_BOOT/extlinux/
       if [ -e /dev/disk/by-label/LAKKA_DISK ]
       then
         cp "$RUNNINGFROM/overlay.with.lakka" /tmp/CHA_BOOT/boot/overlay
