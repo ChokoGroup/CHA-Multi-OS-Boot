@@ -5,7 +5,16 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 The preinstalled system images don't include any roms beside those in the offical CHA OS.
 
+**NOTE: Before playing any games in Lakka, make sure to change the "Menu Toggle Controller Combo" or you«ll have no way to exit games without forcing power off. Check the video file `CHA booting Lakka.mp4`**
+
+Version 1.6:
+- Updated upgrade scripts to check if there is enough space in CHA_BOOT partition before starting to copy.
+- Power off the CHA after upgrade to allow easy removing of pendisk before rebooting.
+- Some fixes and improvements in updater scripts, like making sure writing the files in CHA is completed before exiting.
+
+
 Version 1.5:
+Don't use to install Batocera 36 0r older!
 - Updated launch scripts for fbalpha2012 and mame2010 roms to work with python 3.11 (Batocera 37).
 - Splash videos are enabled again and play correctly (without changing screen resolution) in 4K TVs. There are some in Extras folder. Avoid 1080p videos, 720p play nice.
 - If CHOKO_DISK partition is available, it will also be used to save/load splash videos/images.
@@ -18,6 +27,8 @@ Version 1.4:
 
 
 We are still using the orangepi-plus2e builds for Lakka instead of the capcom-home-arcade, because of slugish UI.
+
+Also, there are a couple of boot splash videos in Extras folder, in case of interest.
 
 
 ## 
@@ -45,7 +56,7 @@ b) For Batocera, extract the folder "boot" to the folder CHA_BOOT that is inside
 
 CAREFULL! The updater scripts won't check if there is enought space in first partition.
 
-WARNING! You probably can't be update to Lakka 4.3 (or later) / Batocera 34 (or later) without first resizing the first partition (with a tool like gparted).
+WARNING! If you have an old version of Lakka or Batocera, you probably can't update to Lakka 4.3 (or later) / Batocera 34 (or later) without first resizing the first partition (with a tool like gparted).
 Also, updating Batocera to 34+ (or again to 37+) will require to delete `es_systems_fbalpha2012.cfg` and `es_systems_mame2010.cfg` from the folder `system/configs/emulationstation`.
 That can be done by the updater scripts or manually, browsing to `\\BATOCERA\share\system\configs\emulationstation` in your home network.
 

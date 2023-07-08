@@ -1,4 +1,4 @@
-# ! /bin/sh
+#!/bin/sh
 # For Choko Hack 12.0.0+
 
 RUNNINGFROM="$(dirname "$(realpath "$0")")"
