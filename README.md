@@ -9,7 +9,6 @@ The preinstalled system images don't include any roms beside those in the offica
 
 Version 1.6:
 - Updated upgrade scripts to check if there is enough space in CHA_BOOT partition before starting to copy.
-- Power off the CHA after upgrade to allow easy removing of pendisk before rebooting.
 - Some fixes and improvements in updater scripts, like making sure writing the files in CHA is completed before exiting.
 
 
