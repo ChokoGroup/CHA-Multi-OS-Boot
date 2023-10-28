@@ -5,7 +5,13 @@ We provide preinstalled system images so you don't have to do all the process ma
 
 The preinstalled system images don't include any roms beside those in the offical CHA OS.
 
-**NOTE: Before playing any games in Lakka, make sure to change the "Menu Toggle Controller Combo" or you«ll have no way to exit games without forcing power off. Check the video file `CHA booting Lakka.mp4`**
+**NOTE: Before playing any games in Lakka, make sure to change the "Menu Toggle Controller Combo" or you will have no way to exit games without forcing power off. Check the video file `CHA booting Lakka.mp4`**
+
+**NOTE 2: For Batocera, installing a fan over the CHA heatsink is HIGHLY recommended!**
+
+Version 1.6.1:
+- Fix mounting the CHOKO_DISK/remappings folder in wrong place for Batocera 38 (probably 37).
+
 
 Version 1.6:
 - Updated upgrade scripts to check if there is enough space in CHA_BOOT partition before starting to copy.
