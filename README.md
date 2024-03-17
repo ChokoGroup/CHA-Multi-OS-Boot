@@ -1,3 +1,15 @@
+#
+### THIS REPOSITORY IS OBSOLETE
+
+We have changed to a single \.img file with a customized Batocera (and official firmware) were we can use either EmulationStation (Batocera style) or RetroArch (Lakka style) as UI.
+The same .img can be used in eMMC (internal memory) and/or SD card.
+CHOKO_DISK partition is still supported, although it has lost importance since there is no Lakka SO to share roms and assets.
+
+You'll find the new dualboot system files in https://github.com/ChokoGroup/batocera-CHA
+
+
+___ The following info is kept for history but should no be used to upgrade to Batocera 39 or later __
+
 # CHA Multi OS Boot
 We want that everybody get the most out of the CHA, so here are more options for the CHA: ways to boot Lakka and/or Batocera without losing the official OS.
 
